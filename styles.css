@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+}
+
+/* --- Product Card --- */
+.product-card {
+  background: #cfcfcf; /* light grey */
+  width: 300px; /* fixed width */
+  min-height: 480px; /* minimum height */
+  margin: 40px auto; /* center + spacing */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.4);
+
+  /* Border image decorative frame */
+  border: 15px solid transparent;
+  border-image: url("border-image.png") 30 round;
+  position: relative;
+}
+
+/* --- Product Image --- */
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* --- Title --- */
+.product-title {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* --- Description --- */
+.product-description {
+  max-height: 140px;
+  overflow-y: scroll;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+/* --- Price Hidden by Default --- */
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+  visibility: hidden;
+}
+
+/* Show price when hovering card */
+.product-card:hover .product-price {
+  visibility: visible;
+}
